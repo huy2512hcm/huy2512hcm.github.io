@@ -1,0 +1,168 @@
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+  </head>
+  <body style="background-image: url('856f31d9f475501c7552c97dbe727319.jpg');">
+    <div class="container-fluid">
+      <div class="row tm-brand-row">
+        <div class="col-lg-4 col-10">
+          <div class="tm-brand-container">
+          </div>
+        </div>
+        <div class="col-lg-8 col-2 tm-nav-col">
+          <div class="tm-nav">
+            <nav class="navbar navbar-expand-lg navbar-light tm-navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mr-0">
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="index.html"> About</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="resume.html">Resume</a>
+                  </li>
+                  <li class="nav-item active">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="row tm-pt-4 tm-mb-3">
+        <div class="col-12 tm-page-cols-container">
+          <div class="tm-page-col-left">
+            <div class="tm-contact-container tm-mb-6">
+              <div class="tm-address-container">
+                <h2 class="tm-text-secondary tm-mb-6">Contact Me</h2>
+                    <a style="color:rgb(31, 104, 104);"
+                      href="https://github.com/nguyenm2151"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a style="color:rgb(31, 104, 104);padding-left:10px;"
+                      href="mailto:nguyenma@mit.edu"
+                    >
+                      <i class="far fa-envelope fa-2x"></i>
+                    </a>
+                    <a style="color:rgb(31, 104, 104);padding-left:10px;"
+                      href="https://www.linkedin.com/in/mai-nguyen1511/"
+                      target="_blank"
+                    >
+                      <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+              </div>
+
+              <div class="tm-location-container">
+                <h2 class="tm-text-secondary tm-mb-4">Location</h2>
+
+                <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU2H978xnttDu-62mj5MAGCGNMfcKcVFk&callback=initMap&libraries=&v=weekly"
+                defer
+              ></script>
+              <style>
+                /* Set the size of the div element that contains the map */
+                #map {
+                  height: 260px;
+                  /* The height is 400 pixels */
+                  width: 300px;
+                  /* The width is the width of the web page */
+                }
+              </style>
+              <script>
+                // Initialize and add the map
+                function initMap() {
+                  // The location of Uluru
+                  const uluru = { lat: 42.360420, lng: -71.088100 };
+                  // The map, centered at Uluru
+                  const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 12,
+                    center: uluru,
+                  });
+                  // The marker, positioned at Uluru
+                  const marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map,
+                  });
+                }
+              </script>
+              <div id="map"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tm-page-col-right tm-form-container">
+            <h2 class="tm-text-secondary mb-4">Leave a Message</h2>
+            <form
+              action="https://script.google.com/macros/s/AKfycbwEtWwp5_vvK7HpL0qX0jdWoh0tmfqfeG_mkKTFav3xNWOVsbG4-dhbpJWCYucHezkq/exec"
+              class="gform"
+              method="POST"
+              data-email=nguyenm2151@gmail.com>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="contact_name"
+                  name="contact_name"
+                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                  placeholder="Your Name"
+                  required="" />
+              </div>
+              <div class="form-group-2">
+                <input
+                  type="email"
+                  id="contact_email"
+                  name="contact_email"
+                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                  placeholder="Your Email"
+                  required="" />
+              </div>
+
+
+              <div class="tm-mb-5">
+                <textarea
+                  rows="5"
+                  id="contact_message"
+                  name="contact_message"
+                  class="form-control rounded-0"
+                  placeholder="Your Message"
+                  required=""></textarea>
+              </div>
+
+
+              <div class="">
+                <button
+                  type="submit"
+                  class="btn btn-secondary tm-btn-submit rounded-0">
+                  Send
+                </button>
+              </div>
+              <div style="display:none" class="thankyou_message">
+              <!-- You can customize the thankyou message by editing the code below -->
+                 <h2 style="font-family:Larsseit-Bold;font-size: 33px;color: #1e1f29;">
+                     Thanks for contacting me! I will get back to you soon!
+                 </h2>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+     <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    </div>
+  </body>
+</html>
