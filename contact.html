@@ -69,42 +69,6 @@
                       <i class="fab fa-linkedin fa-2x"></i>
                     </a>
               </div>
-
-              <div class="tm-location-container">
-                <h2 class="tm-text-secondary tm-mb-4">Location</h2>
-
-                <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU2H978xnttDu-62mj5MAGCGNMfcKcVFk&callback=initMap&libraries=&v=weekly"
-                defer
-              ></script>
-              <style>
-                /* Set the size of the div element that contains the map */
-                #map {
-                  height: 260px;
-                  /* The height is 400 pixels */
-                  width: 300px;
-                  /* The width is the width of the web page */
-                }
-              </style>
-              <script>
-                // Initialize and add the map
-                function initMap() {
-                  // The location of Uluru
-                  const uluru = { lat: 42.360420, lng: -71.088100 };
-                  // The map, centered at Uluru
-                  const map = new google.maps.Map(document.getElementById("map"), {
-                    zoom: 12,
-                    center: uluru,
-                  });
-                  // The marker, positioned at Uluru
-                  const marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map,
-                  });
-                }
-              </script>
-              <div id="map"></div>
-              </div>
             </div>
           </div>
           <div class="tm-page-col-right tm-form-container">
